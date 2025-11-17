@@ -32,7 +32,8 @@ body {
     padding: 0 2rem;
 }
 
-/* ===== Navigation ===== */
+
+
 .navbar {
     position: fixed;
     top: 0;
@@ -259,7 +260,6 @@ body {
     margin-bottom: 1rem;
 }
 
-/* ===== Projects Section ===== */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -350,7 +350,7 @@ body {
     color: var(--white);
 }
 
-/* ===== Skills Section ===== */
+
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -413,7 +413,7 @@ body {
     font-size: 1.5rem;
 }
 
-/* ===== Footer ===== */
+
 .footer {
     background-color: var(--primary-black);
     color: var(--white);
@@ -425,7 +425,7 @@ body {
     color: var(--white);
 }
 
-/* ===== Modal ===== */
+
 .modal {
     display: none;
     position: fixed;
@@ -492,7 +492,7 @@ body {
     border-radius: 8px;
 }
 
-/* ===== Responsive Design ===== */
+
 @media (max-width: 768px) {
     .nav-menu {
         gap: 1rem;
@@ -555,4 +555,3 @@ body {
         padding: 3rem 0;
     }
 }
-

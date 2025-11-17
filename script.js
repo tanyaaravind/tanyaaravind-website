@@ -43,6 +43,7 @@ window.addEventListener('scroll', () => {
     });
 });
 
+
 const navbar = document.querySelector('.navbar');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
@@ -68,7 +69,6 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 
-
 document.querySelectorAll('.experience-card, .project-card').forEach(card => {
     card.style.opacity = '0';
     card.style.transform = 'translateY(20px)';
@@ -81,6 +81,7 @@ const modal = document.getElementById('mediaModal');
 const modalBody = document.getElementById('modalBody');
 const closeBtn = document.querySelector('.modal-close');
 
+
 const mediaFiles = {
     roomcheck: {
         type: 'image',
@@ -91,7 +92,6 @@ const mediaFiles = {
         src: 'https://www.youtube.com/embed/gBhMFpHYPfo'
     }
 };
-
 
 
 document.querySelectorAll('.project-link[data-media]').forEach(link => {
@@ -125,15 +125,6 @@ document.querySelectorAll('.project-link[data-media]').forEach(link => {
                 iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
                 iframe.allowFullscreen = true;
                 modalBody.appendChild(iframe);
-            } else if (mediaInfo.type === 'youtube') {
-                const iframe = document.createElement('iframe');
-                iframe.src = mediaInfo.src;
-                iframe.width = '100%';
-                iframe.height = '600';
-                iframe.frameBorder = '0';
-                iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
-                iframe.allowFullscreen = true;
-                modalBody.appendChild(iframe);
             }
             
             modal.style.display = 'block';
@@ -142,37 +133,42 @@ document.querySelectorAll('.project-link[data-media]').forEach(link => {
     });
 });
 
+
 closeBtn.addEventListener('click', function() {
     modal.style.display = 'none';
-    document.body.style.overflow = 'auto'; // Re-enable scrolling
+    document.body.style.overflow = 'auto';
     
+
     const video = modalBody.querySelector('video');
     if (video) {
         video.pause();
     }
 });
 
+
 window.addEventListener('click', function(e) {
     if (e.target === modal) {
         modal.style.display = 'none';
         document.body.style.overflow = 'auto';
         
+
         const video = modalBody.querySelector('video');
         if (video) {
             video.pause();
         }
     }
 });
+
 
 document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape' && modal.style.display === 'block') {
         modal.style.display = 'none';
         document.body.style.overflow = 'auto';
         
+
         const video = modalBody.querySelector('video');
         if (video) {
             video.pause();
         }
     }
 });
-
