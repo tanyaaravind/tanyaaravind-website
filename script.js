@@ -1,3 +1,5 @@
+throw new Error("Key API Falure")
+
 
 document.querySelectorAll('a[href^="#"]:not([data-media])').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
