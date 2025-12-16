@@ -9,32 +9,44 @@
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">Tanya Aravind</div>
+            <div class="nav-logo">
+                <img src="images/self-portrait.png" alt="Tanya Aravind" class="nav-portrait">
+                <img src="images/tanya-aravind-title.png" alt="Tanya Aravind" class="nav-logo-img">
+            </div>
             <ul class="nav-menu">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#about" class="nav-link"><img src="images/about-navbar.png" alt="About" class="nav-btn-img"></a></li>
+                <li><a href="#experience" class="nav-link"><img src="images/expereince-navbar.png" alt="Experience" class="nav-btn-img"></a></li>
+                <li><a href="#projects" class="nav-link"><img src="images/projects-navbar.png" alt="Projects" class="nav-btn-img"></a></li>
+                <li><a href="#skills" class="nav-link"><img src="images/skills-navbar.png" alt="Skills" class="nav-btn-img"></a></li>
+                <li><a href="#contact" class="nav-link"><img src="images/contact-navbar.png" alt="Contact" class="nav-btn-img"></a></li>
             </ul>
         </div>
     </nav>
 
     <section id="hero" class="hero">
         <div class="container">
-            <h1 class="hero-title">Tanya Aravind</h1>
-            <p class="hero-subtitle">iOS & Full-Stack Developer | AI Enthusiast</p>
-            <p class="hero-description">Computer Science @ Cornell University</p>
-            <div class="hero-cta">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            <div class="hero-content-wrapper">
+                <div class="hero-title-container">
+                    <img src="images/tanya-aravind-title.png" alt="Tanya Aravind" class="hero-title-img">
+                    <img src="images/self-portrait.png" alt="Tanya Aravind" class="hero-portrait">
+                </div>
+                <img src="images/ios-aienthusiast-hero.png" alt="iOS & Full-Stack Developer | AI Enthusiast" class="hero-subtitle-img">
+                <p class="hero-description">Computer Science @ Cornell University</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <img src="images/view-my-work-hero.png" alt="View My Work" class="btn-img">
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <img src="images/get-in-touch-hero.png" alt="Get In Touch" class="btn-img">
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="about" class="section">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <img src="images/about-me-header.png" alt="About Me" class="section-title-img">
             <div class="about-content">
                 <p class="about-text">
                     I'm a Computer Science student at Cornell University with a passion for building 
@@ -48,7 +60,7 @@
                     functional and delightful :D.
                 </p>
                 <div class="about-status">
-                    <span class="status-badge">🎯 Seeking Summer 2026 Internships</span>
+                    <img src="images/seeking-internships-about.png" alt="Seeking Summer 2026 Internships" class="status-badge-img">
                 </div>
             </div>
         </div>
@@ -56,14 +68,12 @@
 
     <section id="experience" class="section section-gray">
         <div class="container">
-            <h2 class="section-title">Experience</h2>
+            <img src="images/experience-header.png" alt="Experience" class="section-title-img">
             <div class="experience-grid">
                 <div class="experience-card">
-                    <div class="experience-header">
-                        <div>
-                            <h3 class="experience-title">Software Engineering Intern</h3>
-                            <p class="experience-company">The Home Depot</p>
-                        </div>
+                    <div class="experience-header-new">
+                        <img src="images/home-depot-logo.png" alt="The Home Depot" class="company-logo">
+                        <h3 class="experience-title">Software Engineering Intern</h3>
                         <span class="experience-date">May 2025 – Aug 2025</span>
                     </div>
                     <p class="experience-description">
@@ -72,7 +82,7 @@
                         components while creating custom Figma designs.
                     </p>
                     <div class="tech-tags">
-                        <span class="tag">Swift</span>
+                        <span class="tag"><img src="images/swift-logo.png" alt="Swift" class="tech-logo"></span>
                         <span class="tag">SwiftUI</span>
                         <span class="tag">OpenAI</span>
                         <span class="tag">Figma</span>
@@ -80,11 +90,9 @@
                 </div>
 
                 <div class="experience-card">
-                    <div class="experience-header">
-                        <div>
-                            <h3 class="experience-title">iOS Developer Intern</h3>
-                            <p class="experience-company">SeeMe</p>
-                        </div>
+                    <div class="experience-header-new">
+                        <img src="images/seeme-logo.png" alt="SeeMe" class="company-logo">
+                        <h3 class="experience-title">iOS Developer Intern</h3>
                         <span class="experience-date">May 2024 – Aug 2024</span>
                     </div>
                     <p class="experience-description">
@@ -93,19 +101,17 @@
                         for a rapidly growing startup.
                     </p>
                     <div class="tech-tags">
-                        <span class="tag">Swift</span>
+                        <span class="tag"><img src="images/swift-logo.png" alt="Swift" class="tech-logo"></span>
                         <span class="tag">SwiftUI</span>
-                        <span class="tag">Firestore</span>
+                        <span class="tag"><img src="images/firebase-logo.png" alt="Firestore" class="tech-logo"></span>
                         <span class="tag">MVVM</span>
                     </div>
                 </div>
 
                 <div class="experience-card">
-                    <div class="experience-header">
-                        <div>
-                            <h3 class="experience-title">Developer</h3>
-                            <p class="experience-company">Cornell Hack4Impact</p>
-                        </div>
+                    <div class="experience-header-new">
+                        <img src="images/hack4impact-logo.png" alt="Cornell Hack4Impact" class="company-logo">
+                        <h3 class="experience-title">Developer</h3>
                         <span class="experience-date">Oct 2024 – Present</span>
                     </div>
                     <p class="experience-description">
@@ -114,9 +120,9 @@
                         serving 110+ users.
                     </p>
                     <div class="tech-tags">
-                        <span class="tag">React</span>
+                        <span class="tag"><img src="images/reactjs-logo.png" alt="React" class="tech-logo"></span>
                         <span class="tag">TypeScript</span>
-                        <span class="tag">MongoDB</span>
+                        <span class="tag"><img src="images/mongodb-logo.png" alt="MongoDB" class="tech-logo"></span>
                         <span class="tag">Docker</span>
                     </div>
                 </div>
@@ -126,11 +132,11 @@
 
     <section id="projects" class="section">
         <div class="container">
-            <h2 class="section-title">Projects</h2>
+            <img src="images/project-header.png" alt="Projects" class="section-title-img">
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-header">
-                        <h3 class="project-title">AI-Powered Academic Search Assistant</h3>
+                        <img src="images/ai-academic-assistant-title.png" alt="AI-Powered Academic Search Assistant" class="project-title-img project-title-large">
                         <span class="project-status">In Progress</span>
                     </div>
                     <p class="project-description">
@@ -140,18 +146,15 @@
                     </p>
                     <div class="tech-tags">
                         <span class="tag">OpenAI</span>
-                        <span class="tag">Pinecone</span>
+                        <span class="tag"><img src="images/pinecone-logo.png" alt="Pinecone" class="tech-logo"></span>
                         <span class="tag">OCR</span>
                         <span class="tag">RAG</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link">Learn More →</a>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-header">
-                        <h3 class="project-title">RoomCheck</h3>
+                        <img src="images/roomcheck-title.png" alt="RoomCheck" class="project-title-img project-title-small">
                         <span class="project-status">Active</span>
                     </div>
                     <p class="project-description">
@@ -159,32 +162,33 @@
                         classroom data. Built with React frontend and Firebase authentication.
                     </p>
                     <div class="tech-tags">
-                        <span class="tag">React</span>
+                        <span class="tag"><img src="images/reactjs-logo.png" alt="React" class="tech-logo"></span>
                         <span class="tag">TypeScript</span>
                         <span class="tag">Express</span>
-                        <span class="tag">Firebase</span>
+                        <span class="tag"><img src="images/firebase-logo.png" alt="Firebase" class="tech-logo"></span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="project-link" data-media="image" data-project="roomcheck">View Demo →</a>
+                        <a href="#" class="project-link" data-media="image" data-project="roomcheck">See System Design →</a>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-header">
-                        <h3 class="project-title">FoundIt iOS Application</h3>
+                        <img src="images/apple-dev-title.png" alt="Apple Dev Framework Explorer" class="project-title-img">
                         <span class="project-status">Completed</span>
                     </div>
                     <p class="project-description">
-                        Led a team of five to build a SwiftUI-based lost-and-found app for Cornell, 
-                        featuring navigation, image uploads, and Google-authenticated login.
+                        Interactive iOS app helping developers explore and understand Apple's development 
+                        frameworks. Features searchable documentation, code examples, and framework 
+                        comparisons to accelerate learning.
                     </p>
                     <div class="tech-tags">
                         <span class="tag">SwiftUI</span>
-                        <span class="tag">Xcode</span>
-                        <span class="tag">Google Auth</span>
+                        <span class="tag"><img src="images/xcode-logo.png" alt="Xcode" class="tech-logo"></span>
+                        <span class="tag">Swift</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="project-link" data-media="video" data-project="foundit">Watch Demo →</a>
+                        <a href="https://youtu.be/gBhMFpHYPfo" target="_blank" class="project-link">See Demo →</a>
                     </div>
                 </div>
             </div>
@@ -193,63 +197,26 @@
 
     <section id="skills" class="section section-gray">
         <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Mobile Development</h3>
-                    <div class="tech-tags">
-                        <span class="tag">Swift</span>
-                        <span class="tag">SwiftUI</span>
-                        <span class="tag">UIKit</span>
-                        <span class="tag">Xcode</span>
-                        <span class="tag">iOS</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Web Development</h3>
-                    <div class="tech-tags">
-                        <span class="tag">React</span>
-                        <span class="tag">TypeScript</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">Next.js</span>
-                        <span class="tag">Node.js</span>
-                        <span class="tag">Express</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3 class="skill-category-title">AI & Machine Learning</h3>
-                    <div class="tech-tags">
-                        <span class="tag">OpenAI API</span>
-                        <span class="tag">RAG</span>
-                        <span class="tag">Pinecone</span>
-                        <span class="tag">Vector Embeddings</span>
-                        <span class="tag">OCR</span>
-                        <span class="tag">LangChain</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Languages & Tools</h3>
-                    <div class="tech-tags">
-                        <span class="tag">Java</span>
-                        <span class="tag">Python</span>
-                        <span class="tag">C</span>
-                        <span class="tag">SQL</span>
-                        <span class="tag">Git</span>
-                        <span class="tag">Docker</span>
-                        <span class="tag">MongoDB</span>
-                        <span class="tag">Firebase</span>
-                    </div>
-                </div>
+            <img src="images/skills-header.png" alt="Technical Skills" class="section-title-img">
+            <div class="skills-grid-flat">
+                <span class="tag skill-tag"><img src="images/swift-logo.png" alt="Swift" class="skill-logo"></span>
+                <span class="tag skill-tag"><img src="images/xcode-logo.png" alt="Xcode" class="skill-logo"></span>
+                <span class="tag skill-tag"><img src="images/ios-logo.png" alt="iOS" class="skill-logo"></span>
+                <span class="tag skill-tag"><img src="images/reactjs-logo.png" alt="React" class="skill-logo"></span>
+                <span class="tag skill-tag"><img src="images/nextjs-logo.png" alt="Next.js" class="skill-logo"></span>
+                <span class="tag skill-tag"><img src="images/nodejs-logo.png" alt="Node.js" class="skill-logo"></span>
+                <span class="tag skill-tag"><img src="images/pinecone-logo.png" alt="Pinecone" class="skill-logo"></span>
+                <span class="tag skill-tag"><img src="images/java-logo.png" alt="Java" class="skill-logo"></span>
+                <span class="tag skill-tag"><img src="images/python-logo.png" alt="Python" class="skill-logo"></span>
+                <span class="tag skill-tag"><img src="images/mongodb-logo.png" alt="MongoDB" class="skill-logo"></span>
+                <span class="tag skill-tag"><img src="images/firebase-logo.png" alt="Firebase" class="skill-logo"></span>
             </div>
         </div>
     </section>
 
     <section id="contact" class="section">
         <div class="container">
-            <h2 class="section-title">Let's Connect</h2>
+            <img src="images/lets-connect-header.png" alt="Let's Connect" class="section-title-img">
             <div class="contact-content">
                 <p class="contact-text">
                     I'm currently seeking Summer 2026 internship opportunities in iOS development, 
@@ -257,23 +224,19 @@
                 </p>
                 <div class="contact-links">
                     <a href="mailto:ta374@cornell.edu" class="contact-link">
-                        <span class="contact-icon">✉️</span>
-                        ta374@cornell.edu
+                        <img src="images/email-connect.png" alt="ta374@cornell.edu" class="contact-btn-img">
                     </a>
                     <a href="https://linkedin.com/in/tanyaaravind" target="_blank" class="contact-link">
-                        <span class="contact-icon">💼</span>
-                        LinkedIn
+                        <img src="images/linkedin-connect.png" alt="LinkedIn" class="contact-btn-img">
                     </a>
                     <a href="https://github.com/tanyaaravind" target="_blank" class="contact-link">
-                        <span class="contact-icon">🔗</span>
-                        GitHub
+                        <img src="images/github-connect.png" alt="GitHub" class="contact-btn-img">
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <p>&copy; 2024 Tanya Aravind. Hand-drawn with ❤️</p>
@@ -290,4 +253,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-

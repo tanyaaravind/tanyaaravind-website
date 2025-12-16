@@ -1,21 +1,20 @@
-throw new Error("Key API Falure")
-
-
 document.querySelectorAll('a[href^="#"]:not([data-media])').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        
         const targetId = this.getAttribute('href');
-        const targetElement = document.querySelector(targetId);
         
-        if (targetElement) {
-            const navHeight = document.querySelector('.navbar').offsetHeight;
-            const targetPosition = targetElement.offsetTop - navHeight;
+        if (targetId && targetId !== '#') {
+            const targetElement = document.querySelector(targetId);
             
-            window.scrollTo({
-                top: targetPosition,
-                behavior: 'smooth'
-            });
+            if (targetElement) {
+                e.preventDefault();
+                const navHeight = document.querySelector('.navbar').offsetHeight;
+                const targetPosition = targetElement.offsetTop - navHeight;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
         }
     });
 });
@@ -87,7 +86,7 @@ const closeBtn = document.querySelector('.modal-close');
 const mediaFiles = {
     roomcheck: {
         type: 'image',
-        src: 'RoomCheck_Design.png'
+        src: 'images/roomcheck-design.png'
     },
     foundit: {
         type: 'youtube',
@@ -99,10 +98,13 @@ const mediaFiles = {
 document.querySelectorAll('.project-link[data-media]').forEach(link => {
     link.addEventListener('click', function(e) {
         e.preventDefault();
+        console.log('Modal link clicked!', this);
         
         const projectName = this.getAttribute('data-project');
         const mediaType = this.getAttribute('data-media');
         const mediaInfo = mediaFiles[projectName];
+        
+        console.log('Project:', projectName, 'Media:', mediaInfo);
         
         if (mediaInfo) {
             modalBody.innerHTML = '';
